@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PeopleTable from './components/PeopleTable'
 import axios from 'axios'
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
     console.log(this.state.people)
     return (
       <div>
-        YAY!!! Hello React!!! I missed you! It's so good to be back, lovely!
+        <PeopleTable />
       </div>
     )
   }
