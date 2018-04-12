@@ -37,6 +37,7 @@ Rails.application.configure do
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
+  ENV['API_KEY'] = 'ak_b7b6f9dbca089cec5ef461284c7dc2b85de2f1c3071134442aaadc27fd53a634'
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
