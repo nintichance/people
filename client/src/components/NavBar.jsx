@@ -6,7 +6,7 @@ const NavBar = (props) => {
 
     return (
         <NavDiv>
-            Hi
+            <img src="https://salesloft.com/wp-content/themes/hive/img/logo.svg" />
         </NavDiv>
     )
 
