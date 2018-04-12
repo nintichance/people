@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PeopleTable from './components/PeopleTable'
 import CharacterCountList from './components/CharacterCountList'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
 
 class App extends Component {
@@ -23,12 +24,17 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.people)
+    const PeopleTableComponent = () => (<PeopleTable people={this.state.people}/>)
+    const CharacterCountComponent = () => (<CharacterCountList people={this.state.people}/>)
     return (
-      <div>
-        <PeopleTable people={this.state.people}/>
-        <CharacterCountList people={this.state.people}/>
-      </div>
+      <Router>
+          <div>
+            <Switch>
+              <Route exact path="/people" component={PeopleTableComponent}/>
+              <Route exact path="/characters" component={CharacterCountComponent}/>
+            </Switch>
+          </div>
+      </Router>
     )
   }
 }
