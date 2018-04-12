@@ -18,6 +18,7 @@ class CharacterCount extends Component{
             let characterCount = {}
             characterCount.character = emailArray[index]
             characterCount.count = count
+            characters.push(characterCount)
             }
         })
       console.log(count)
