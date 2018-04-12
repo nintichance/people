@@ -19,7 +19,8 @@ const PeopleTable = (props) => {
                 {
                   Header: "Last Name",
                   id: "lastName",
-                  accessor: person => person.last_name
+                  accessor: person => person.last_name,
+                  onClick: () => {alert("Hello")}
                 }
               ]
             },

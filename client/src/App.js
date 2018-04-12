@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PeopleTable from './components/PeopleTable'
+import CharacterCountList from './components/CharacterCountList'
 import axios from 'axios'
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
     return (
       <div>
         <PeopleTable people={this.state.people}/>
+        <CharacterCountList people={this.state.people}/>
       </div>
     )
   }
