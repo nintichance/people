@@ -3,7 +3,12 @@ import React, { Component } from 'react'
 class CharacterCount extends Component{
 
     countCharacters = (email) => {
-        console.log(email.split(""))
+        const emailArray = email.split("")
+        let  characterCount = {}
+        emailArray.forEach((character) => { 
+            characterCount[character] = (characterCount[character] || 0) + 1
+        })
+        console.log(characterCount)
     }
 
     render(){
