@@ -17,13 +17,13 @@ class CharacterCountList extends Component {
     })
     render(){
     return (
-        <div>
+        <ParentContainer>
             <NavBar />
+            <Header>Click Button to Count Unique Characters</Header>
             <Container>
-                <h1>Click Button to Count Unique Characters</h1>
                 {this.peopleList}
             </Container>
-        </div>
+        </ParentContainer>
     )
 }
 }
@@ -32,6 +32,24 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
+    overflow: scroll;
 `
-
+export const ParentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+`
+export const Header = styled.div`
+    margin-top: 36px;
+    background: #333333;
+    color: white;
+    width: 100vw;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+`
 export default CharacterCountList

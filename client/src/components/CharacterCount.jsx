@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import DisplayCount from './DisplayCount'
+import { CountContainer, CountInfo, PeopleInfo } from './styled-components/Containers'
+
 class CharacterCount extends Component{
     state = {
         characters: [],
@@ -43,11 +45,15 @@ class CharacterCount extends Component{
 
     render(){
         return(
-            <div>
-                {this.state.showCount ? <DisplayCount characters = {this.state.characters}/> : null}
-                <p>{this.props.firstName} {this.props.lastName}</p>
-                <button onClick={() => this.displayCount()}>{this.props.email}</button>
-            </div>
+            <CountContainer>
+                <div>
+                    <p>{this.props.firstName} {this.props.lastName}</p>
+                    <button onClick={() => this.displayCount()}>{this.props.email}</button>
+                </div>
+                <CountInfo>
+                    {this.state.showCount ? <DisplayCount characters = {this.state.characters}/> : null}
+                </CountInfo>
+            </CountContainer>
         )
     }
 }

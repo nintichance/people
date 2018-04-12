@@ -103,9 +103,22 @@ export const Button = styled.div`
         text-decoration: none;
         color: white;
     }
-   
+`
+export const CountContainer = styled.div`
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+`
+
+export const CountInfo = styled.div`
+    display: flex;
+    width: 45vw;
+`
+export const PeopleInfo = styled.div`
+    display: flex;
+    width: 45vw;
+    height: 80vh;
 `
 
 
-
-export default { Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
+export default { CountContainer, Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
