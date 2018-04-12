@@ -36,7 +36,13 @@ export const SplashImageDiv = styled.img `
         height: 100vh;
     }
 `
+export const IconsContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-right: 20px;
+`
 
 
 
-export default { Container, NavDiv }
+export default { IconsContainer, Container, NavDiv }
