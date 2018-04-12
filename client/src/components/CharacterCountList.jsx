@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
+import CharacterCount from './CharacterCount'
 import styled from 'styled-components'
 
 class CharacterCountList extends Component {
-    
-    countCharacters = (email) => {
-        alert(email)
-    }
 
     peopleList = this.props.people.map((person)=>{
         return(
-        <div key={person.id}>
-            <p>{person.first_name} {person.last_name}</p>
-            <button onClick={() => this.countCharacters(person.email_address)}>{person.email_address}</button>
+        <div>
+            <CharacterCount key={person.id}
+                            firstName={person.first_name}
+                            lastName={person.last_name}
+                            email={person.email_address}/>
         </div>
         )
     })
