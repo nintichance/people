@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container } from './styled-components/Containers'
+import NavBar from './NavBar'
 const Home = () => {
     return(
-        <Container>
-            <Link to="/people">View People</Link>
-            <Link to="/characters">Count Characters</Link>
-        </Container>
+        <div>
+            <NavBar />
+            <Container>
+                <Link to="/people">View People</Link>
+                <Link to="/characters">Count Characters</Link>
+            </Container>
+        </div>
     )
 }
 
