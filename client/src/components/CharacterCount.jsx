@@ -21,7 +21,7 @@ class CharacterCount extends Component{
             characters.push(characterCount)
             }
         })
-      console.log(count)
+      console.log(characters)
     }
 
     render(){
