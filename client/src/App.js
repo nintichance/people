@@ -25,7 +25,7 @@ class App extends Component {
     console.log(this.state.people)
     return (
       <div>
-        <PeopleTable />
+        <PeopleTable people={this.state.people}/>
       </div>
     )
   }
