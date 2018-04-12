@@ -9,7 +9,13 @@ class CharacterCount extends Component{
             return character
         })
         let count = 0
-      console.log(emailArrayCopy)
+        emailArray.forEach((character, index)=>{
+            if (character === emailArrayCopy[index]){
+                count++
+                emailArrayCopy.splice(emailArrayCopy[index], 1)
+            }
+        })
+      console.log(count)
     }
 
     render(){
