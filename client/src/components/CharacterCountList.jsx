@@ -4,10 +4,10 @@ import styled from 'styled-components'
 
 class CharacterCountList extends Component {
 
-    peopleList = this.props.people.map((person)=>{
+    peopleList = this.props.people.map((person, index)=>{
         return(
         <div>
-            <CharacterCount key={person.id}
+            <CharacterCount key={index}
                             firstName={person.first_name}
                             lastName={person.last_name}
                             email={person.email_address}/>

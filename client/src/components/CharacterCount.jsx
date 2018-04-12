@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-
+import DisplayCount from './DisplayCount'
 class CharacterCount extends Component{
     state = {
-        characters: []
+        characters: [],
+        showCount: false
     }
     
     componentWillMount(){
         this.countCharacters()
     }
-    
+
     countCharacters = () => {
         const emailArray = this.props.email.split("")
         let characters = []
@@ -34,8 +35,9 @@ class CharacterCount extends Component{
     render(){
         return(
             <div>
+                {this.state.showCount ? <DisplayCount characters = {this.state.characters}/> : null}
                 <p>{this.props.firstName} {this.props.lastName}</p>
-                <button onClick={() => this.countCharacters(this.props.email)}>{this.props.email}</button>
+                <button onClick={() => this.setState({showCount: true})}>{this.props.email}</button>
             </div>
         )
     }
