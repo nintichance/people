@@ -17,6 +17,7 @@ class CharacterCount extends Component{
             if (count > 0){
             let characterCount = {}
             characterCount.character = emailArray[index]
+            characterCount.count = count
             }
         })
       console.log(count)
