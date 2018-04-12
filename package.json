@@ -9,7 +9,6 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
-    "react-router-dom": "^4.2.2",
     "react-table": "^6.8.0"
   }
 }
