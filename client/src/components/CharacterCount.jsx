@@ -8,7 +8,7 @@ class CharacterCount extends Component{
         const emailArrayCopy = emailArray.map((character)=>{
             return character
         })
-        
+        let count = 0
       console.log(emailArrayCopy)
     }
 
