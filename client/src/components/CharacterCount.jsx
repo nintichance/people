@@ -14,6 +14,7 @@ class CharacterCount extends Component{
                 count++
                 emailArrayCopy.splice(emailArrayCopy[index], 1)
             }
+            let characterCount = {}
         })
       console.log(count)
     }
