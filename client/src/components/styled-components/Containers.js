@@ -120,5 +120,10 @@ export const PeopleInfo = styled.div`
     height: 80vh;
 `
 
+export const PlaceHolder = styled.div`
+    width: 40vw;
+    border: 2px solid black;
+`
 
-export default { CountContainer, Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
+
+export default { PlaceHolder, CountContainer, Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
