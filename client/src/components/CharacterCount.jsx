@@ -32,12 +32,21 @@ class CharacterCount extends Component{
         }) 
     }
 
+    displayCount = () => {
+        if (this.state.showCount){
+            this.setState({showCount: false})
+        }
+        else{
+            this.setState({showCount: true})
+        }
+    }
+
     render(){
         return(
             <div>
                 {this.state.showCount ? <DisplayCount characters = {this.state.characters}/> : null}
                 <p>{this.props.firstName} {this.props.lastName}</p>
-                <button onClick={() => this.setState({showCount: true})}>{this.props.email}</button>
+                <button onClick={() => this.displayCount()}>{this.props.email}</button>
             </div>
         )
     }
