@@ -45,8 +45,9 @@ export const IconsContainer = styled.div`
 
 export const RightDiv = styled.div`
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: absolute;
     width: 80vh;
     height: 60vh;
@@ -59,8 +60,9 @@ export const RightDiv = styled.div`
   
 export const LeftDiv = styled.div `
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: absolute;
     width: 80vh;
     height: 60vh;
@@ -69,9 +71,21 @@ export const LeftDiv = styled.div `
     top: 20vh;
     left: 10vw;
     color: white;
-    
+`
+export const Button = styled.div`
+    width: 150px;
+    height: 50px;
+    border: 3px solid white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 `
 
 
 
-export default { IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
+export default { Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }

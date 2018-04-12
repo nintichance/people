@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Container, SplashImageDiv, RightDiv, LeftDiv } from './styled-components/Containers'
+import { Container, SplashImageDiv, RightDiv, LeftDiv, Button } from './styled-components/Containers'
 import { HomeHeader, InfoText } from './styled-components/Text' 
 
 import NavBar from './NavBar'
@@ -13,13 +13,13 @@ const Home = () => {
                 <HomeHeader>Website Features</HomeHeader>
                 <RightDiv>
                     <InfoText>See people in our database!</InfoText>
+                    <Button><Link to="/people">View People</Link></Button>
+
                 </RightDiv>
                 <LeftDiv>
                     <InfoText>Count the characters in their emails!</InfoText>
+                    <Button><Link to="/characters">Count Characters</Link></Button>
                 </LeftDiv>
-                {/* <h1> Welcome to the People Site!</h1>
-                <Link to="/people">View People</Link>
-                <Link to="/characters">Count Characters</Link> */}
             </Container>
 
         </div>
