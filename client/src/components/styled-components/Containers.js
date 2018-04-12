@@ -7,6 +7,12 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 1199px){
+        position: static;
+    }
+    @media only screen and (max-width: 500px){
+        height: 150vh;
+    }
 `
 export const NavDiv = styled.div`
     width: 100vw;
@@ -32,9 +38,7 @@ export const SplashImageDiv = styled.img `
     justify-content: center;
     align-items: center;
     color: white;
-    @media only screen and (max-width: 350px){
-        height: 100vh;
-    }
+   
 `
 export const IconsContainer = styled.div`
     display: flex;
@@ -56,6 +60,12 @@ export const RightDiv = styled.div`
     top: 35vh;
     right: 20vw;
     color: white;
+    @media only screen and (max-width: 1199px){
+        position: static;
+        top: none;
+        right: none;
+        width: 100vw;
+    }
 `
   
 export const LeftDiv = styled.div `
@@ -71,6 +81,15 @@ export const LeftDiv = styled.div `
     top: 20vh;
     left: 10vw;
     color: white;
+    @media only screen and (max-width: 1199px){
+        position: static;
+        top: none;
+        left: none;
+        width: 100vw;
+    }
+    @media only screen and (max-width: 500px){
+        height: 50vh;
+    }
 `
 export const Button = styled.div`
     width: 150px;
@@ -84,6 +103,7 @@ export const Button = styled.div`
         text-decoration: none;
         color: white;
     }
+   
 `
 
 
