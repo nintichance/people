@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
 class CharacterCount extends Component{
-    
+
     countCharacters = (email) => {
-        alert(email)
+        console.log(email.split(""))
     }
 
     render(){
