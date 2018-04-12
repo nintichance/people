@@ -4,8 +4,13 @@ class CharacterCount extends Component{
     state = {
         characters: []
     }
-    countCharacters = (email) => {
-        const emailArray = email.split("")
+    
+    componentWillMount(){
+        this.countCharacters()
+    }
+    
+    countCharacters = () => {
+        const emailArray = this.props.email.split("")
         let characters = []
         const emailArrayCopy = emailArray.map((character)=>{
             return character
@@ -22,8 +27,8 @@ class CharacterCount extends Component{
             characterCount.count = count
             characters.push(characterCount)
             }
-        })
-        this.setState({characters: characters})
+            this.setState({characters: characters})
+        }) 
     }
 
     render(){
