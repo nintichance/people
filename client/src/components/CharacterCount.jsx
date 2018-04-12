@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 
 class CharacterCount extends Component{
-
+    state = {
+        characters: []
+    }
     countCharacters = (email) => {
         const emailArray = email.split("")
         let characters = []
