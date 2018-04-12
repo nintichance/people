@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactTable from "react-table"
+import styled from 'styled-components'
 import "react-table/react-table.css"
 
 const PeopleTable = (props) => {
