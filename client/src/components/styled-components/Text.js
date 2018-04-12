@@ -9,6 +9,13 @@ export const HomeHeader = styled.h1 `
     color: #f7d359;
 `
 
+export const InfoText = styled.div`
+    font-size: 2em;
+    margin: 20px;
+    color: white;
+    width: 50%;
+`
 
 
-export default { HomeHeader }
+
+export default { InfoText, HomeHeader }
