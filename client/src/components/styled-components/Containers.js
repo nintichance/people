@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 `
 export const NavDiv = styled.div`
@@ -24,7 +24,7 @@ export const NavDiv = styled.div`
 export const SplashImageDiv = styled.img `
     width: 100vw;
     height: 80vh;
-    background: url("https://images.unsplash.com/photo-1519261386176-e55a3fa9ff01?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fc0f4a7920c2f3e009aefef998e20d9&auto=format&fit=crop&w=1050&q=80");
+    background: url("https://images.unsplash.com/photo-1522658429337-5917c5277aa2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ed7e56a9e305e8fcce005a002b79e19e&auto=format&fit=crop&w=1050&q=80");
     background-size: cover;
     background-position: bottom; 
     background-attachment: fixed;
@@ -43,6 +43,27 @@ export const IconsContainer = styled.div`
     margin-right: 20px;
 `
 
+export const RightDiv = styled.div`
+    position: absolute;
+    width: 80vh;
+    height: 60vh;
+    z-index: 3;
+    background: rgba(35, 202, 98, 0.9);
+    top: 35vh;
+    right: 20vw;
+    
+`
+  
+export const LeftDiv = styled.div `
+    position: absolute;
+    width: 80vh;
+    height: 60vh;
+    z-index: 2;
+    background: rgba(66, 174, 222, 0.9);
+    top: 20vh;
+    left: 10vw;
+    `
 
 
-export default { IconsContainer, Container, NavDiv }
+
+export default { IconsContainer, Container, NavDiv, RightDiv, LeftDiv }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Container, SplashImageDiv } from './styled-components/Containers'
+import { Container, SplashImageDiv, RightDiv, LeftDiv } from './styled-components/Containers'
+import { HomeHeader } from './styled-components/Text' 
 
 import NavBar from './NavBar'
 const Home = () => {
@@ -9,10 +10,15 @@ const Home = () => {
             <NavBar />
             <SplashImageDiv />
             <Container>
-                <h1> Welcome to the People Site!</h1>
+                <HomeHeader>Website Features</HomeHeader>
+                <RightDiv></RightDiv>
+                <LeftDiv>
+                </LeftDiv>
+                {/* <h1> Welcome to the People Site!</h1>
                 <Link to="/people">View People</Link>
-                <Link to="/characters">Count Characters</Link>
+                <Link to="/characters">Count Characters</Link> */}
             </Container>
+
         </div>
     )
 }
