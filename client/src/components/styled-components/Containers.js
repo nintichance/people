@@ -39,5 +39,4 @@ export const SplashImageDiv = styled.img `
 
 
 
-
 export default { Container, NavDiv }

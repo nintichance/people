@@ -1,42 +1,44 @@
 import React from 'react'
-import ReactTable from "react-table"
-import "react-table/react-table.css"
+import ReactTable from 'react-table'
+import NavBar from './NavBar'
+import 'react-table/react-table.css'
 
 const PeopleTable = (props) => {
     return(
         <div>
+          <NavBar />
             <ReactTable
           data={props.people}
           columns={[
             {
-              Header: "Name",
+              Header: 'Name',
               columns: [
                 {
-                  Header: "First Name",
-                  id: "firstName",
+                  Header: 'First Name',
+                  id: 'firstName',
                   accessor: person => person.first_name
                 },
                 {
-                  Header: "Last Name",
-                  id: "lastName",
+                  Header: 'Last Name',
+                  id: 'lastName',
                   accessor: person => person.last_name,
-                  onClick: () => {alert("Hello")}
+                  onClick: () => {alert('Hello')}
                 }
               ]
             },
             {
-              Header: "Info",
+              Header: 'Info',
               columns: [
                 {
-                  Header: "Email Address",
-                  id: "email",
+                  Header: 'Email Address',
+                  id: 'email',
                   accessor: person => person.email_address
                 }
               ]
             }
           ]}
           defaultPageSize={25}
-          className="-striped -highlight"
+          className='-striped -highlight'
         />
         <br />
         </div>

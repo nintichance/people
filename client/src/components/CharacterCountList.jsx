@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CharacterCount from './CharacterCount'
+import NavBar from './NavBar'
 import styled from 'styled-components'
 
 class CharacterCountList extends Component {
@@ -16,10 +17,13 @@ class CharacterCountList extends Component {
     })
     render(){
     return (
-        <Container>
-            <h1>Click Button to Count Unique Characters</h1>
-            {this.peopleList}
-        </Container>
+        <div>
+            <NavBar />
+            <Container>
+                <h1>Click Button to Count Unique Characters</h1>
+                {this.peopleList}
+            </Container>
+        </div>
     )
 }
 }
