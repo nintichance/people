@@ -4,7 +4,7 @@ class CharacterCount extends Component{
 
     countCharacters = (email) => {
         const emailArray = email.split("")
-        const characters = []
+        let characters = []
         const emailArrayCopy = emailArray.map((character)=>{
             return character
         })
@@ -14,11 +14,7 @@ class CharacterCount extends Component{
                 count++
                 emailArrayCopy.splice(emailArrayCopy[index], 1)
             }
-            if (count > 0){
-                let characterCount = {}
-                characterCount.character = emailArray[index]
-            }
-
+            let characterCount = {}
         })
       console.log(count)
     }
