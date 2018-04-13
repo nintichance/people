@@ -112,18 +112,65 @@ export const CountContainer = styled.div`
 
 export const CountInfo = styled.div`
     display: flex;
+    justify-content: center;
     width: 45vw;
+    margin: 10px;
 `
 export const PeopleInfo = styled.div`
     display: flex;
     width: 45vw;
+    justify-content: center;
+`
+
+export const Header = styled.div`
+    margin-top: 36px;
+    background: #333333;
+    color: white;
+    width: 100vw;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 500px){
+        font-size: 1.5em;
+        padding: 5px;
+    }
+    @media only screen and (max-width: 400px){
+        font-size: 1.25em;
+        padding: 6px;
+    }
+    @media only screen and (max-width: 325px){
+        font-size: 1em;
+        padding: 8px;
+    }
+`
+export const PeopleContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
     height: 80vh;
+    overflow: scroll;
+`
+export const ParentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+`
+export const CountTable = styled.div`
+  display: flex;
 `
 
-export const PlaceHolder = styled.div`
-    width: 40vw;
-    border: 2px solid black;
-`
-
-
-export default { PlaceHolder, CountContainer, Button, IconsContainer, Container, NavDiv, RightDiv, LeftDiv }
+export default { CountTable, 
+                 PeopleContainer, 
+                 ParentContainer, 
+                 Header, 
+                 PeopleInfo, 
+                 CountContainer, 
+                 Button, 
+                 IconsContainer, 
+                 Container, 
+                 NavDiv, 
+                 RightDiv, 
+                 LeftDiv }

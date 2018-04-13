@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CharacterCount from './CharacterCount'
 import NavBar from './NavBar'
+import { Header, ParentContainer, PeopleContainer } from './styled-components/Containers'
 import styled from 'styled-components'
 
 class CharacterCountList extends Component {
@@ -19,37 +20,13 @@ class CharacterCountList extends Component {
     return (
         <ParentContainer>
             <NavBar />
-            <Header>Click Button to Count Unique Characters</Header>
-            <Container>
+            <Header>Click Button to Count Characters</Header>
+            <PeopleContainer>
                 {this.peopleList}
-            </Container>
+            </PeopleContainer>
         </ParentContainer>
     )
 }
 }
 
-export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    overflow: scroll;
-`
-export const ParentContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: scroll;
-`
-export const Header = styled.div`
-    margin-top: 36px;
-    background: #333333;
-    color: white;
-    width: 100vw;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-`
 export default CharacterCountList

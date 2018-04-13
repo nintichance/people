@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
+import { CountTable } from './styled-components/Containers'
+import { Button } from './styled-components/Text'
 import styled from 'styled-components'
+
 const DisplayCount = (props) => {
     
     const list = props.characters.map((character)=>{
@@ -13,7 +16,7 @@ const DisplayCount = (props) => {
     })
 
     return(
-        <Container>
+        <CountTable>
             <ReactTable
           data={props.characters}
           columns={[
@@ -38,23 +41,8 @@ const DisplayCount = (props) => {
         />
         <br />
         <Button onClick={()=>{props.displayCount()}}>-</Button>
-        </Container>
+        </CountTable>
     )
 }
-
-export const Container = styled.div`
-  display: flex;
-`
-
-export const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 50px;
-  font-size: 1em;
-  background: rgba(0, 0, 0, 0.0001)
-  border-style: none;
-`
 
 export default DisplayCount

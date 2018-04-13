@@ -22,6 +22,17 @@ export const InfoText = styled.div`
     width: 50%;
 `
 
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 50px;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.0001)
+  border-style: none;
+`
 
-
-export default { InfoText, HomeHeader }
+export default { Button, 
+                 InfoText, 
+                 HomeHeader }
