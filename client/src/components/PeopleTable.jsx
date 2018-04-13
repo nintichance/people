@@ -2,11 +2,13 @@ import React from 'react'
 import ReactTable from 'react-table'
 import NavBar from './NavBar'
 import 'react-table/react-table.css'
+import styled from 'styled-components'
 
 const PeopleTable = (props) => {
     return(
         <div>
           <NavBar />
+            <Container>
             <ReactTable
           data={props.people}
           columns={[
@@ -41,7 +43,13 @@ const PeopleTable = (props) => {
           className='-striped -highlight'
         />
         <br />
+        </Container>
         </div>
     )
 }
+
+export const Container = styled.div`
+    width: 100vw;
+    margin-top: 100px;
+`
 export default PeopleTable
