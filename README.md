@@ -1,27 +1,20 @@
-# README
+# Salesloft People
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Use the App [here](https://saleslofty.herokuapp.com/)**
 
-Things you may want to cover:
+**App Developer**: 
+[Ninti Chance](https://github.com/nintichance)
 
-* Ruby version
+**App Overview**
 
-* System dependencies
+List people & count the characters in their email addresses.
 
-* Configuration
+Solutions to level 1 & level 2.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-https://salesloft.com/wp-content/uploads/2017/05/Colors.jpg
+**Resources**
+* [Salesloft's Colors](https://salesloft.com/wp-content/uploads/2017/05/Colors.jpg)
+* [React](https://reactjs.org/)
+* [Ruby](http://guides.rubyonrails.org/index.html)
+* [Rails](http://guides.rubyonrails.org/index.html)
+* [CSS](https://www.w3schools.com/css/) 
+*[Styled Components](https://www.styled-components.com/): styled-components is a JS library which allows developers to easily style their React components. I style in styled-components because it keeps my CSS code more organized and readible.
