@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const DuplicatesList = (props) => {
+class DuplicatesList extends Component{
+    componentWillMount(){
+        this.findDuplicates()
+    }
+    findDuplicates = () => {
+        const duplicates = []
+        const emails = this.props.people.map((person)=>{
+            return person.email_address
+        })
+        console.log(emails)
+    }
+    render(){
     return(
         <div>
             Hello from DuplicatesList
         </div>
     )
+    }
 }
 
 export default DuplicatesList
