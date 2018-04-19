@@ -28,6 +28,7 @@ class App extends Component {
   render() {
     const PeopleTableComponent = () => (<PeopleTable people={this.state.people}/>)
     const CharacterCountComponent = () => (<CharacterCountList people={this.state.people}/>)
+    const DuplicatesListComponent = () => (<DuplicatesList people={this.state.people}/>)
     return (
       <Router>
           <div>
@@ -35,7 +36,7 @@ class App extends Component {
               <Route exact path="/" component={Home}/>
               <Route exact path="/people" component={PeopleTableComponent}/>
               <Route exact path="/characters" component={CharacterCountComponent}/>
-              <Route exaact path="/duplicates" component={DuplicatesList} />
+              <Route exaact path="/duplicates" component={DuplicatesListComponent} />
             </Switch>
           </div>
       </Router>
