@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PeopleTable from './components/PeopleTable'
 import CharacterCountList from './components/CharacterCountList'
 import Home from './components/Home'
+import DuplicatesList from './components/DuplicatesList'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
 
@@ -34,6 +35,7 @@ class App extends Component {
               <Route exact path="/" component={Home}/>
               <Route exact path="/people" component={PeopleTableComponent}/>
               <Route exact path="/characters" component={CharacterCountComponent}/>
+              <Route exaact path="/duplicates" component={DuplicatesList} />
             </Switch>
           </div>
       </Router>

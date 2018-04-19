@@ -34,7 +34,7 @@ class CharacterCount extends Component{
             this.setState({characters: characters})
         }) 
     }
-
+   
     displayCount = () => {
         if (this.state.showCount){
             this.setState({showCount: false})
