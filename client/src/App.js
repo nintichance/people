@@ -26,6 +26,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.people.length)
     const PeopleTableComponent = () => (<PeopleTable people={this.state.people}/>)
     const CharacterCountComponent = () => (<CharacterCountList people={this.state.people}/>)
     const DuplicatesListComponent = () => (<DuplicatesList people={this.state.people}/>)
