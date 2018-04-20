@@ -38,6 +38,9 @@ class DuplicatesList extends Component{
         
         return percentage
         //if accuracy is more than 80%, then it's a duplicate
+        if (percentage >= 80){
+            return "You've found a duplicate"
+        }
       }
     render(){
     return(
