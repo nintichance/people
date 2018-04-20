@@ -18,6 +18,7 @@ class DuplicatesList extends Component{
     }
     estimateDuplicates = (arr1, arr2) => {
         let count = 0
+        let percentage = 0
         //compare array one with array two
         //iterate through each array
         //compare the elements of the array, if they are the same, then add to the count
@@ -29,12 +30,14 @@ class DuplicatesList extends Component{
           })
         //take the length of the longer array and the count. divide the count by it
         if (arr1.length === arr2.length){
-            return count/arr1.length
+            percentage = (count/arr1.length) * 100
         } 
         else if (arr1.length > arr2.length){
-            return count/arr1.length
+            percentage = (count/arr1.length) * 100
         }
-        //if accuracy is more than 90%, then it's a duplicate
+        
+        return percentage
+        //if accuracy is more than 80%, then it's a duplicate
       }
     render(){
     return(
